@@ -1,21 +1,10 @@
 h1 {
-  color: red;
+  color: Black;
 }
-
-p {
-  color: blue;
-  font-family: Helvetica;
-  font-size: 16px;
-}
-
-ul li {
-  background-color: yellow;
-}
-
 
 
  h2 {
   color: green;
-  background-color: orange;
+ 
   font-size: 20px;
 }
