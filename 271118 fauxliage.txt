@@ -63,12 +63,12 @@
           font-size: 14px;
       }
 
-      h4 {
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-}
+      P.solid {
+      box-sizing: content-box;
+      width: 1070px;
+      height: 70px;
+      padding: 30px;
+      border: 5px double grey;
     }
     .wrapper {
       display: inline-flex;
@@ -134,7 +134,7 @@
     </style>
 
 <div align="center">
-<h4 class="solid">Sed ut perspiciatis em oluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. r? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+<p class="solid">Sed ut perspiciatis em oluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. r? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
 
 <h3 align="center">
 <div id="frontpageimages">
