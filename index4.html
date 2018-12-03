@@ -29,17 +29,8 @@ $(".carousel").on("touchstart", function (event) {
 
 <style>
 
-.navbar-expand-lg {
-margin-left: 650px;
-
-}
 .jumbotron-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-  width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 /*This is to make the social media buttons bounce*/
 
@@ -71,7 +62,7 @@ margin-left: 650px;
   justify-content: center;
   height: 500px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 /* carousel fullscreen - vertically centered caption*/
@@ -92,23 +83,25 @@ margin-left: 650px;
   width: 100%;
   margin-top: 50px;
 }
+.btn {
+  color: white;
+}
 
+.h1 {
+ text-color: white;
+
+}
 </style>
 
 </head>
 
 <body>
-
   <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-          </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/Aboutus.html">About Us</a>
-          </li>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="#"><h1 class="display-4">Fauxliage</h1>
+        <p>/ˈfəʊlɪɪdʒ/</p></a>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Choose your size
@@ -121,19 +114,17 @@ margin-left: 650px;
               <a class="dropdown-item" href="#">Special Occasion</a>
             </div>
           </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="#">About us</a>
+          </li>
         </ul>
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign in/Register</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View your Shopping Bag <i class="fa fa-shopping-bag"></i></button>
         </nav>
       </div>
     </div>
-<!--Heading-->
 
-<div class="jumbotron-header">
-  <div class="container">
-    <h1 class="display-4">Fauxliage</h1>
-            <p>/ˈfəʊlɪɪdʒ/</p>
-  </div>
-</div>
+
     <!-- Main carousel -->
 
 <div class="jumbotron-carousel">
