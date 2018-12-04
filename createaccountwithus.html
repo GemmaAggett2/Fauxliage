@@ -29,9 +29,6 @@ $(".carousel").on("touchstart", function (event) {
 
 <style>
 
-.jumbotron-header {
-  margin-bottom: 300px;
-}
 /*This is to make the social media buttons bounce*/
 
 .wrapper {
@@ -75,7 +72,7 @@ $(".carousel").on("touchstart", function (event) {
     transform: translate(0, -50%);
 }
 
-.jumbotron-footer {
+.jumbotronfooter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,13 +102,21 @@ $(".carousel").on("touchstart", function (event) {
 .navbar .navbar-inner .container {
   color:white}
 
+  .jumbotronheader {
+    background-image: url("images/carousel15.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
 </style>
 
 
 </head>
 
 <body>
-
+<div class="jumbotronheader">
   <div class="container">
     <nav class="navbar sticky-top navbar-expand-lg">
         <a class="navbar-brand" href="#"><h1 class="display-4">Fauxliage</h1>
@@ -142,48 +147,128 @@ $(".carousel").on("touchstart", function (event) {
 
         </ul>
       </div>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View your Shopping Bag <i class="fa fa-shopping-bag"></i></button>
-
-
-        </nav>
+  </nav>
 
       </div>
     </div>
+  </div>
 
-    <!-- Main carousel -->
+    <!-- Main body -->
 
-<div class="jumbotron-carousel">
-    <div class="container-carousel">
+<div class="jumbotronbody">
+<div class="container">
+<h1>Create an account with us</h1>
+<h2>Give us all your money</h2>
+<p>Just enter your details below</p>
 
-        <div id="homepage-carousel" class="carousel slide carousel-fade carousel-fullscreen" data-ride="carousel">
+<form>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                  <img src="images/carousel15.jpg" class="img-fluid" alt="">
-                    <div class="carousel-caption">
-                        <h1>LUXE | FAUX | PLANTS</h1>
-                        <div class="container-socialmedia">
-                          <div class="row justify-content-center">
-                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-                              <div class="wrapper">
-                                <a target="_blank" href="https://www.instagram.com/"><i class="fa fa-3x fa-instagram"></i></a>
-                                <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-3x fa-facebook"></i></a>
-                                <a target="_blank" href="https://www.twitter.com/"><i class="fa fa-3x fa-twitter"></i></a>
-                                <a target="_blank" href="https://www.pinterest.com/"><i class="fa fa-3x fa-pinterest"></i></a>
-                              </div>
-                          </div>
-                            <p> Copyright Fauxliage 2018 </p>
-                      </div>
-
-                    </div>
-                </div>
-
-              </div>
-
-        </div>
-    </div>
+<div class="form-row">
+<div class="form-group col-md-6">
+  <label for="inputEmail4">First Name</label>
+<input type="text" class="form-control" placeholder="First name">
 </div>
+<div class="form-row">
+<div class="form-group col-md-6">
+<label for="inputEmail4">Last Name</label>
+<input type="text" class="form-control" placeholder="Last name">
+</div>
+<div class="form-row">
+<div class="form-group col-md-6">
+<label for="inputEmail4">Email</label>
+<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+</div>
+<div class="form-group col-md-6">
+<label for="inputPassword4">Password</label>
+<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+</div>
+</div>
+<div class="form-group">
+<label for="inputAddress">Address</label>
+<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+</div>
+<div class="form-group">
+<label for="inputAddress2">Address 2</label>
+<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+</div>
+<div class="form-row">
+<div class="form-group col-md-6">
+<label for="inputCity">City</label>
+<input type="text" class="form-control" id="inputCity">
+</div>
+<div class="form-group col-md-4">
+<label for="inputState">County</label>
+<select id="inputState" class="form-control">
+<option selected>Choose...</option>
+<option>...</option>
+</select>
+</div>
+<div class="form-group col-md-2">
+<label for="inputZip">Postcode</label>
+<input type="text" class="form-control" id="inputZip">
+</div>
+</div>
+
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+<label class="form-check-label" for="exampleRadios1">
+Click here to receive daily fauxs
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+<label class="form-check-label" for="exampleRadios2">
+Click here to faux pas
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+<label class="form-check-label" for="exampleRadios2">
+Click here to avoid all contact with central marketing
+</label>
+</div>
+<div>
+<p></p>
+</div>
+
+<div class="form-group">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="gridCheck">
+<label class="form-check-label" for="gridCheck">
+<p>I agree to the terms and conditions of using this website<p>
+</label>
+</div>
+<button type="submit" class="btn btn-primary">Sign up</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+
+<div class="jumbotronfooter">
+    <div class="container-socialmedia">
+        <div class="row justify-content-center">
+          <h3>LUXE | FAUX | PLANTS</h3>
+        </div>
+          <div class="row justify-content-center">
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <div class="wrapper">
+                      <a target="_blank" href="https://www.instagram.com/"><i class="fa fa-3x fa-instagram"></i></a>
+                      <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-3x fa-facebook"></i></a>
+                      <a target="_blank" href="https://www.twitter.com/"><i class="fa fa-3x fa-twitter"></i></a>
+                      <a target="_blank" href="https://www.pinterest.com/"><i class="fa fa-3x fa-pinterest"></i></a>
+                  </div>
+          </div>
+          <div class="row justify-content-center">
+          <p> Copyright Fauxliage 2018 </p>
+          </div>
+        </div>
+  </div>
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
