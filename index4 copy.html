@@ -91,11 +91,20 @@ $(".carousel").on("touchstart", function (event) {
  text-color: white;
 }
 
+.jumbotron-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 100px;
+}
 </style>
 
 </head>
 
 <body>
+  <div class="jumbotron">
   <div class="container">
     <nav class="navbar sticky-top navbar-expand-lg">
         <a class="navbar-brand" href="#"><h1 class="display-4">Fauxliage</h1>
@@ -123,6 +132,7 @@ $(".carousel").on("touchstart", function (event) {
         </nav>
       </div>
     </div>
+</div>
 
     <!-- Main carousel -->
 
